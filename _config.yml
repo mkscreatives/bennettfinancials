@@ -2,3 +2,5 @@ title: "Bennett Financials Blog"
 description: "CFO insights, tax strategy, and finance education for service business owners."
 theme: jekyll-theme-cayman
 markdown: kramdown
+plugins:
+  - jekyll-sitemap
