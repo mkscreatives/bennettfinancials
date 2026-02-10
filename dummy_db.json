@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "entries": [
+    {
+      "title": "Backup logs",
+      "summary": "Rotate and compress logs older than 7 days.",
+      "commands": ["find /var/log -type f -mtime +7", "gzip"]
+    },
+    {
+      "title": "Data export",
+      "summary": "Export records to CSV with headers and validate output count.",
+      "commands": ["psql", "awk", "wc -l"]
+    }
+  ],
+  "notes": [
+    "Prefer dry-run mode by default.",
+    "Always validate inputs and dependencies before execution.",
+    "Emit a manifest summary at the end of the script."
+  ]
+}
